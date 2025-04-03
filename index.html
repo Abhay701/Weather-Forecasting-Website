@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="city-input">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="error" id="error-message">City not found. Please try again.</div>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="weather-info" id="weather-info">
+            <h2 class="city-name" id="city-name">London</h2>
+            <p class="date-time" id="date-time">Monday, 10:30 AM</p>
+
+            <div class="weather-icon" id="weather-icon">
+                <img src="/api/placeholder/120/120" alt="Weather Icon" id="icon">
+            </div>
+
+            <h1 class="temperature" id="temperature">25°C</h1>
+            <p class="description" id="description">Cloudy</p>
+
+            <div class="details">
+                <div class="detail">
+                    <span class="detail-label">Feels Like</span>
+                    <span class="detail-value" id="feels-like">27°C</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value" id="humidity">65%</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-label">Wind Speed</span>
+                    <span class="detail-value" id="wind-speed">5.2 km/h</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-label">Pressure</span>
+                    <span class="detail-value" id="pressure">1012 hPa</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Data provided by OpenWeather API</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
